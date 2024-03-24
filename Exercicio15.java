@@ -13,20 +13,24 @@ public class Exercicio15 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Informe o ponto P1, sendo x1 do plano: ");
-        double x1 = scanner.nextInt();
+        double x1 = scanner.nextDouble();
 
         System.out.println("Informe o ponto P1, sendo y1 do plano: ");
-        double y1 = scanner.nextInt();
+        double y1 = scanner.nextDouble();
 
         System.out.println("Informe o ponto P2, sendo x2 do plano: ");
-        double x2 = scanner.nextInt();
+        double x2 = scanner.nextDouble();
 
         System.out.println("Informe o ponto P2, sendo y2 do plano: ");
-        double y2 = scanner.nextInt();
+        double y2 = scanner.nextDouble();
 
         double d = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
-        System.out.println("A distância entre os pontos é: " + d);
+        String dFormatado = String.format("%.2f", d);
+
+        System.out.println("A distância entre os pontos é: " + dFormatado);
+
+        scanner.close();
 
     }
 }

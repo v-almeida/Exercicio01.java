@@ -68,5 +68,6 @@ public class Exercicio12 {
         }
 
         System.out.println("O mês é: " + mes);
+        scanner.close();
     }
 }
