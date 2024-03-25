@@ -13,6 +13,8 @@ public class Exercicio20 {
         System.out.println("Qual é a velocidade média da viagem: ");
         double vm = scanner.nextDouble();
 
+        scanner.close();
+
         double litros = tempo * vm;
 
         System.out.println("A quantidade de combustível gasta na viagem foi " + litros / 12);
